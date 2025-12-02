@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Contacts</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/grid_12.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/slider.css">
+    <link href='http://fonts.googleapis.com/css?family=Cabin+Sketch:400,700' rel='stylesheet' type='text/css'>
+    <script src="js/jquery-1.7.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/tms-0.4.1.js"></script>
+    <script>
+		$(document).ready(function(){				   	
+			$('.slider')._TMS({
+				show:0,
+				pauseOnHover:true,
+				prevBu:'.prev',
+				nextBu:'.next',
+				playBu:false,
+				duration:800,
+				preset:'fade',
+				pagination:true,
+				pagNums:false,
+				slideshow:7000,
+				numStatus:false,
+				banners:false,
+				waitBannerAnimation:false,
+				progressBar:false
+			})		
+		});
+	</script>
+	<!--[if lt IE 8]>
+       <div style=' clear: both; text-align:center; position: relative;'>
+         <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+           <img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
+        </a>
+      </div>
+    <![endif]-->
+    <!--[if lt IE 9]>
+   		<script type="text/javascript" src="js/html5.js"></script>
+    	<link rel="stylesheet" type="text/css" media="screen" href="css/ie.css">
+	<![endif]-->
+</head>
+<body>
+  <div class="main">
+  <!--==============================header=================================-->
+    <header>
+        <h1><a href="index.html"><img src="images/logo.png" alt=""></a></h1>
+        <nav>  
+            <div id="slide">		
+                <div class="slider">
+                    <ul class="items">
+                        <li><img src="images/slider-1.jpg" alt="" /></li>
+                        <li><img src="images/games.jpg" alt="" /></li>
+                        <li><img src="images/games1.jpg" alt="" /></li>
+                    </ul>
+                </div>	
+                <a href="#" class="prev"></a><a href="#" class="next"></a>
+            </div>
+            <ul class="menu">
+                <li><a href="index.html" class="clr-1">Главная</a></li>
+                <li><a href="about.html" class="clr-2">О нас</a></li>
+                <li><a href="schedule.html" class="clr-3">Расписание</a></li>
+                <li><a href="gallery.html" class="clr-4">Галерея</a></li>
+                <li class="current"><a href="contacts.html" class="clr-5">Контакты</a></li>
+            </ul>
+         </nav>
+    </header>   
+  <!--==============================content================================-->
+    <section id="content">
+        <div class="container_12">	
+          <div class="grid_4 bot-1">
+            <h2 class="top-6">Связаться с нами</h2>
+            <div class="map">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d276.73641937765166!2d44.509316484868634!3d48.70977464149879!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x411acb37a8ba28e1%3A0x527bc7e887cc4b1b!2z0JrQvtC80LzRg9C90LjRgdGC0LjRh9C10YHQutCw0Y8g0YPQuy4sIDXQkSwg0JLQvtC70LPQvtCz0YDQsNC0LCDQktC-0LvQs9C-0LPRgNCw0LTRgdC60LDRjyDQvtCx0LsuLCA0MDAwODc!5e0!3m2!1sru!2sru!4v1764588229980!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>"></iframe>
+            </div>
+            <dl>
+                <dt>Коммунистическая ул., 5Б</dt>
+                <dd><span>Телефон: </span>+7 950 354 56 75</dd>
+                <dd><span>Электроная почта: </span><a href="#" class="link">kostan123@gmail.com</a></dd>
+            </dl> 
+          </div>
+          <div class="grid_8">
+            <div class="block-1 top-5">
+            	<div class="block-1-shadow">
+                	<h2 class="clr-6">Контакная Форма</h2>
+                    <form id="form" method="post" >
+                      <fieldset>
+                        <label><strong>Имя:</strong><input type="text" value=""><strong class="clear"></strong></label>
+                        <label><strong>Электроная почта:</strong><input type="text" value=""><strong class="clear"></strong></label>
+                        <label><strong>Телефон:</strong><input type="text" value=""><strong class="clear"></strong></label>
+                        <label><strong>Сообщение:</strong><textarea></textarea><strong class="clear"></strong></label>
+                        <strong class="clear"></strong>
+                        <div class="btns pad-2"><a href="#" class="link-2">Очистить</a><a href="#" class="link-2" onClick="document.getElementById('form').submit()">Отправить</a></div>
+                      </fieldset>  
+                    </form> 
+                </div>
+            </div>
+            <!--==============================footer=================================-->
+            <footer>
+                <p>© 2025 Школа воспитания у детей эстетического чувства.</p>
+            </footer>	  
+          </div>
+          <div class="clear"></div>
+        </div>
+    </section>    
+   </div>      
+</body>
+</html>

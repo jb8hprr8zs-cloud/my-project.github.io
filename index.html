@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Home</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/grid_12.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/slider.css">
+    <link href='http://fonts.googleapis.com/css?family=Cabin+Sketch:400,700' rel='stylesheet' type='text/css'>
+    <script src="js/jquery-1.7.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/tms-0.4.1.js"></script>
+    <script>
+		$(document).ready(function(){				   	
+			$('.slider')._TMS({
+				show:0,
+				pauseOnHover:true,
+				prevBu:'.prev',
+				nextBu:'.next',
+				playBu:false,
+				duration:800,
+				preset:'fade',
+				pagination:true,
+				pagNums:false,
+				slideshow:7000,
+				numStatus:false,
+				banners:false,
+				waitBannerAnimation:false,
+				progressBar:false
+			})		
+		});
+	</script>
+	<!--[if lt IE 8]>
+       <div style=' clear: both; text-align:center; position: relative;'>
+         <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+           <img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
+        </a>
+      </div>
+    <![endif]-->
+    <!--[if lt IE 9]>
+   		<script type="text/javascript" src="js/html5.js"></script>
+    	<link rel="stylesheet" type="text/css" media="screen" href="css/ie.css">
+	<![endif]-->
+</head>
+<body>
+  <div class="main">
+  <!--==============================header=================================-->
+    <header>
+        <h1><a href="index.html"><img src="images/logo.png" alt=""></a></h1>
+        <nav>  
+            <div id="slide">		
+                <div class="slider">
+                    <ul class="items">
+                        <li><img src="images/slider-1.jpg" alt="" /></li>
+                        <li><img src="images/games.jpg" alt="" /></li>
+                        <li><img src="images/games1.jpg" alt="" /></li>
+                    </ul>
+                </div>	
+                <a href="#" class="prev"></a><a href="#" class="next"></a>
+            </div>
+            <ul class="menu">
+                <li class="current"><a href="index.html" class="clr-1">Главная</a></li>
+                <li><a href="about.html" class="clr-2">О нас</a></li>
+                <li><a href="schedule.html" class="clr-3">Расписание</a></li>
+                <li><a href="gallery.html" class="clr-4">Галерея</a></li>
+                <li><a href="contacts.html" class="clr-5">Контакты</a></li>
+            </ul>
+         </nav>
+    </header>   
+  <!--==============================content================================-->
+    <section id="content">
+        <div class="container_12">	
+          <div class="grid_4 bot-1">
+            <div class="art"></div>
+            <h2 class="top-1 p2">События</h2>
+            <p class="text-1 p3">15 сентября — «Линия и Танец»</p>
+            <p>Изучаем красоту графики и пластики через рисунок и движение. День, когда карандашная линия на бумаге встречается с линией танца в воздухе.</p>
+            <p class="text-1 top-2 p3">20 октября — «Симфония Красок»</p>
+            <p>Погружение в мир цвета. Дети исследуют, как цвета звучат, какое у них настроение и как они сочетаются, создавая собственную цветовую «симфонию» на холсте.</p>
+            <a href="#" class="link-1 top-3">Архив новостей</a>
+          </div>
+          <div class="grid_8">
+          	<div class="pad-1">
+          		<h2 class="p2">Добро пожаловать в Школа воспитания у детей эстетического чувства.</h2>
+            	<p class="text-1">Школа воспитания эстетического чувства у детей — это целенаправленная педагогическая система, которая через гармоничное взаимодействие искусства, природы и повседневных практик развивает у ребёнка способность к эмоционально-ценностному восприятию прекрасного, формирует художественный вкус и пробуждает потребность создавать красоту в собственной жизни.</p>
+            </div> 
+            <div class="block-1">
+            	<div class="block-1-shadow">
+                	<h2 class="clr-6 p4">Наша Галерея</h2>
+                    <div class="box-1">
+                    	<a href="#" class="img-border"><img src="images/img1.jpg" alt=""></a>
+                    	<p class="text-2">Артём, 10 лет</p>
+                    </div>
+                    <div class="box-1 last">
+                    	<a href="#" class="img-border"><img src="images/img2.jpg" alt=""></a>
+                    	<p class="text-2">Иван, 13 лет</p>
+                    </div>
+                    <div class="clear p5"></div>
+                    <div class="box-1">
+                    	<a href="#" class="img-border"><img src="images/img3.jpg" alt=""></a>
+                    	<p class="text-2">Екатерина, 14 лет</p>
+                    </div>
+                    <div class="box-1 last">
+                    	<a href="#" class="img-border"><img src="images/img4.jpg" alt=""></a>
+                    	<p class="text-2">Милана, 8 лет</p>
+                    </div>
+                    <div class="clear"></div>
+                    <div class="pad-2">
+                    	<a href="#" class="link-2">Полная Галерея</a>
+                    </div>
+                </div>
+            </div>
+            <!--==============================footer=================================-->
+            <footer>
+                <p>© 2025 Школа воспитания у детей эстетического чувства.</p>
+            </footer>	  
+          </div>
+          <div class="clear"></div>
+        </div>
+    </section>    
+   </div>      
+</body>
+</html>
